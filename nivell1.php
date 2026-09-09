@@ -20,20 +20,23 @@ declare(strict_types = 1 );
 // var_dump($secArray);
 //
 
-function checkCharacter(array $arr, string $char) {
-    $counter = 0;
-    for($i = 0; $i < count($arr); $i++) {
-        if(str_contains($arr[$i], $char)) {
-            $counter++;
-            if ($counter == count($arr)) {
-                echo "Character in every word";
-                return true;
-            }
-        } else {
-            echo "Character not in every word";
-            return false;
-        }
-    }
-}
-checkCharacter(["holaa", "patata", "bonito"], "a");
+// function checkCharacter(array $arr, string $char) {
+//     $counter = 0;
+//     for($i = 0; $i < count($arr); $i++) {
+//         if(str_contains($arr[$i], $char)) {
+//             $counter++;
+//             if ($counter == count($arr)) {
+//                 echo "Character in every word";
+//                 return true;
+//             }
+//         } else {
+//             echo "Character not in every word";
+//             return false;
+//         }
+//     }
+// }
+// checkCharacter(["holaa", "patata", "bonito"], "a");
+//
+$persona = ["nom"=> "Ruben", "edat"=> 21, "email"=> "rubencamus@hotmail.com", "menjarFavorit"=> "Truita de patates"];
+var_dump($persona);
 ?>
